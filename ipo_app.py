@@ -2,7 +2,13 @@ import streamlit as st
 import pandas as pd
 import joblib
 import seaborn as sns
+
+# --- Matplotlib Fix ---
+import matplotlib 
+matplotlib.use('Agg') # <--- THIS IS THE FIX
 import matplotlib.pyplot as plt
+# ----------------------
+
 import os # Good, keep this
 
 # --- File Paths ---
