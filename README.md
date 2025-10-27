@@ -1,24 +1,24 @@
-ndian IPO Analysis & Prediction Dashboard
+# Indian IPO Analysis & Prediction Dashboard
 
 This is a full-stack data science project that analyzes historical Indian IPO data to predict listing-day gains. The project uses a machine learning model to provide real-time predictions through an interactive web dashboard built with Streamlit.
 
-Check out the live app here: 
+Check out the live app here: https://ipopredictiondashboard.streamlit.app
 
-Purpose
+## Purpose
 
 The goal of this project is to help investors and analysts make data-driven decisions about upcoming IPOs. By analyzing factors like issue size and subscription rates (QIB, HNI, RII), the predictive model forecasts the "pop" or listing gain, offering a quantitative estimate of risk and reward.
 
-Features
+## Features
 
 Interactive Prediction: A sidebar allows users to input values for an IPO (Issue Size, QIB, HNI, and RII subscription rates) and receive an instant prediction for the listing gain.
 
-Exploratory Data Analysis (EDA): The main page features a scatter plot showing the historical relationship between Issue Size and Listing Gains.
+## Exploratory Data Analysis (EDA): The main page features a scatter plot showing the historical relationship between Issue Size and Listing Gains.
 
 Live Data Table: A filterable, sortable sample of the cleaned data used for the analysis.
 
 Robust & Fast: The app uses Streamlit's caching features (@st.cache_resource, @st.cache_data) for high performance and includes robust error handling.
 
-Tech Stack
+# Tech Stack
 
 This project was built using the following technologies:
 
@@ -34,7 +34,7 @@ Web Framework & Deployment: Streamlit, Streamlit Cloud
 
 Model Persistence: Joblib
 
-How to Run Locally
+# How to Run Locally
 
 1. Prerequisites
 
@@ -69,7 +69,7 @@ streamlit run ipo_app.py
 
 Your browser will automatically open to the app.
 
-Common Issues & Troubleshooting
+# Common Issues & Troubleshooting
 
 This project involved several real-world deployment challenges. Here are the solutions to the most common issues:
 
@@ -79,7 +79,7 @@ Problem: The Streamlit Cloud environment doesn't have the joblib library install
 
 Solution: This means the requirements.txt file was not pushed to GitHub or Streamlit is stuck on an old commit.
 
-Fix:
+# Fix:
 
 Ensure joblib is listed in your requirements.txt file.
 
